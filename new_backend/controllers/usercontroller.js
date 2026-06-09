@@ -8,7 +8,7 @@ exports.register = async (req, res) => {
         name,
         email,
         password
-    } = req.body;  //read the frontend form data 
+    } = req.body;  //read the frontend from data 
   
     const hashedPassword =
         await bcrypt.hash(password, 10);

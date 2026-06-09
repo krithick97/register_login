@@ -3,7 +3,7 @@ require("dotenv").config();
 const app = require("./app");
 
 const db =
-require("./config/db");
+require("./config/db"); //export db files
 
 const seedSuperAdmin =
 require("./seeder/SuperAdminSeeders");

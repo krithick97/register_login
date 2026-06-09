@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 
 const seedSuperAdmin = async () => {
     const email = "superadmin@gmail.com";
-
+  // create super admin if not exists
     db.query(
         "SELECT * FROM users WHERE email = ?",
         [email],
